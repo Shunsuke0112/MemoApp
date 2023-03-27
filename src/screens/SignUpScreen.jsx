@@ -1,5 +1,5 @@
 import {
-  StyleSheet, Text, TextInput, View,
+  StyleSheet, Text, TextInput, TouchableOpacity, View,
 } from 'react-native';
 import React from 'react';
 
@@ -17,7 +17,9 @@ export default function SignUpScreen() {
         <Button label="Sign Up" />
         <View style={styles.footer}>
           <Text style={styles.footerText}>Already registered?</Text>
-          <Text style={styles.footerLink}>Log In.</Text>
+          <TouchableOpacity>
+            <Text style={styles.footerLink}>Log In.</Text>
+          </TouchableOpacity>
         </View>
       </View>
     </View>
